@@ -296,6 +296,10 @@ h2 {
 
     background: url(./img/music.png);
 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     margin-bottom: .8rem;
 
     transition:
@@ -312,6 +316,10 @@ h2 {
     height: 200px;
 
     background: url(./img/ui-ux.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     margin-bottom: .8rem;
 
@@ -330,6 +338,10 @@ h2 {
 
     background: url(./img/design.png);
 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     margin-bottom: .8rem;
 
     transition:
@@ -347,6 +359,10 @@ h2 {
     height: 200px;
 
     background: url(./img/web.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     margin-bottom: .8rem;
 

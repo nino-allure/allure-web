@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: #f6f5f3;
+    color: #1c1c1c;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    line-height: 1.6;
+    font-weight: 300;
+
+    padding: 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    animation: fadePage .8s ease;
+
+}
+
+
+@keyframes fadePage {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+.resume {
+
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+
+h1 {
+
+    font-size: 2.6rem;
+    font-weight: 300;
+
+    letter-spacing: -0.02em;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+h2 {
+
+    font-size: 1.1rem;
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    letter-spacing: .03em;
+
+    margin: 2.5rem 0 1.2rem;
+
+    color: #2b2b2b;
+
+}
+
+
+
+.bio-text {
+
+    font-size: 1.25rem;
+
+    max-width: 700px;
+
+    color: #2e2e2e;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.asym-line {
+
+    width: 40%;
+
+    height: 1px;
+
+    background: #d6d4d2;
+
+    margin: 2rem 0 1rem;
+
+    animation: lineGrow .9s ease;
+
+}
+
+
+
+.asym-line-right {
+
+    width: 30%;
+
+    height: 1px;
+
+    background: #d6d4d2;
+
+    margin: 2.5rem 0 1.5rem auto;
+
+    animation: lineGrow .9s ease;
+
+}
+
+
+
+@keyframes lineGrow {
+
+    from {
+
+        opacity: 0;
+        transform: scaleX(0);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: scaleX(1);
+
+    }
+
+}
+
+
+
+.experience-list {
+
+    list-style: none;
+
+}
+
+
+
+.role {
+
+    padding-bottom: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+    border-bottom: 1px solid #e3e1de;
+
+}
+
+
+
+.role:last-child {
+
+    border-bottom: none;
+
+}
+
+
+
+.role-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: .5rem;
+
+}
+
+
+
+.role-company {
+
+    font-weight: 400;
+
+    font-size: 1.05rem;
+
+}
+
+
+
+.role-date {
+
+    font-size: .9rem;
+
+    color: #6b6b6b;
+
+}
+
+
+
+.role-description {
+
+    margin-top: .3rem;
+
+    color: #4a4a4a;
+
+    font-size: .95rem;
+
+    max-width: 80%;
+
+}
+
+
+
+.portfolio-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 2.5rem;
+
+    margin-top: 2rem;
+
+}
+
+
+
+.project-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: transform .25s ease;
+
+}
+
+
+
+.project-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+
+.project-image {
+
+    width: 100%;
+
+    height: 200px;
+
+    background: #e0dedb;
+
+    margin-bottom: .8rem;
+
+    transition:
+        transform .3s ease,
+        background .25s ease;
+
+    border-radius: 10px;
+
+}
+
+.music {
+
+    width: 100%;
+
+    height: 200px;
+
+    background: url(./img/music.png);
+
+    margin-bottom: .8rem;
+
+    transition:
+        transform .3s ease,
+        background .25s ease;
+
+    border-radius: 10px;
+}
+
+.ui-ux {
+
+    width: 100%;
+
+    height: 200px;
+
+    background: url(./img/ui-ux.png);
+
+    margin-bottom: .8rem;
+
+    transition:
+        transform .3s ease,
+        background .25s ease;
+
+    border-radius: 10px;
+}
+
+.design {
+
+    width: 100%;
+
+    height: 200px;
+
+    background: url(./img/design.png);
+
+    margin-bottom: .8rem;
+
+    transition:
+        transform .3s ease,
+        background .25s ease;
+
+    border-radius: 10px;
+}
+
+
+.web {
+
+    width: 100%;
+
+    height: 200px;
+
+    background: url(./img/web.png);
+
+    margin-bottom: .8rem;
+
+    transition:
+        transform .3s ease,
+        background .25s ease;
+
+    border-radius: 10px;
+}
+
+
+
+.project-card:hover .project-image {
+
+    transform: scale(1.02);
+
+    background: #cecbc7;
+
+}
+
+
+
+.project-title {
+
+    font-size: 1.05rem;
+
+    font-weight: 400;
+
+    margin-bottom: .2rem;
+
+}
+
+
+
+.project-description {
+
+    font-size: .9rem;
+
+    color: #6b6b6b;
+
+    line-height: 1.4;
+
+}
+
+
+
+.footer-links {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 2rem;
+
+    margin: 1rem 0 1.5rem;
+
+}
+
+
+
+.footer-links a {
+
+    text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+
+    transition: border-color .2s ease;
+        color: #1c1c1c;
+
+}
+
+
+
+.footer-links a:hover {
+
+    border-bottom: 1px solid #8c8c8c;
+
+}
+
+
+
+.copyright {
+
+    font-size: .8rem;
+
+    color: #8f8f8f;
+
+}
+
+
+
+*:focus-visible {
+
+    outline: 1px solid #1c1c1c;
+    outline-offset: 4px;
+
+}
+
+
+
+@media (min-width:640px) {
+
+    body {
+
+        padding: 3rem 2.5rem;
+
+    }
+
+    h1 {
+
+        font-size: 3rem;
+
+    }
+
+    .bio-text {
+
+        font-size: 1.35rem;
+
+    }
+
+    .portfolio-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 3rem 2rem;
+
+    }
+
+    .role-description {
+
+        max-width: 70%;
+
+    }
+
+}

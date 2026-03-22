@@ -294,7 +294,7 @@ h2 {
 
     height: 200px;
 
-    background: url(./img/music.png);
+    background: url(../img/music.png);
 
     background-position: center;
     background-size: cover;
@@ -315,7 +315,7 @@ h2 {
 
     height: 200px;
 
-    background: url(./img/ui-ux.png);
+    background: url(../img/ui-ux.png);
 
     background-position: center;
     background-size: cover;
@@ -336,7 +336,7 @@ h2 {
 
     height: 200px;
 
-    background: url(./img/design.png);
+    background: url(../img/design.png);
 
     background-position: center;
     background-size: cover;
@@ -358,7 +358,7 @@ h2 {
 
     height: 200px;
 
-    background: url(./img/web.png);
+    background: url(../img/web.png);
 
     background-position: center;
     background-size: cover;

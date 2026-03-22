@@ -1,0 +1,45 @@
+.ui-grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.ui-card {
+    position: relative;
+}
+
+/* broken grid */
+.ui-card:nth-child(2) {
+    margin-left: 10%;
+}
+
+.ui-card:nth-child(3) {
+    margin-left: 25%;
+}
+
+.ui-card img {
+    width: 100%;
+    display: block;
+
+    transition: transform .6s ease;
+}
+
+.ui-card:hover img {
+    transform: scale(1.02);
+}
+
+.ui-card p {
+    margin-top: .5rem;
+    max-width: 500px;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    .ui-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ui-card:nth-child(2),
+    .ui-card:nth-child(3) {
+        margin-left: 0;
+    }
+}

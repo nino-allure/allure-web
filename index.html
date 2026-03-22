@@ -3,15 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>nino allure</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nino Allure — Дизайн, Музыка, Веб</title>
+
+    <meta name="description" content="Портфолио Антона Маркова — дизайн, интерфейсы, веб и электронная музыка.">
+
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ninoallure.com/">
+
+    <meta property="og:title" content="Nino Allure">
+    <meta property="og:description" content="Design / Music / Web">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ninoallure.com/">
+    <meta property="og:image" content="https://ninoallure.com/img/preview.jpg">
+
+    <link rel="icon" href="favicon.png">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
 
     <nav class="nav">
         <div class="nav-inner">
-
             <a href="index.html" class="nav-logo">nino-allure</a>
 
             <div class="nav-links">
@@ -21,23 +38,26 @@
                 <a href="design.html">дизайн</a>
             </div>
 
+            <button class="theme-toggle" id="themeToggle">◐</button>
         </div>
     </nav>
 
-    <main class="home">
+    <main class="container home">
 
-        <h1 class="home-title">nino allure</h1>
+        <h1>nino allure</h1>
+        <p class="subtitle">design / music / web</p>
 
-        <div class="home-grid">
-
-            <a href="ninoallure.html" class="home-card">Музыка</a>
-            <a href="uiux.html" class="home-card">Интерфейсы</a>
-            <a href="design.html" class="home-card">Дизайн</a>
-            <a href="resume.html" class="home-card">Резюме</a>
-
+        <div class="grid">
+            <a href="ninoallure.html" class="card">Музыка</a>
+            <a href="uiux.html" class="card">Интерфейсы</a>
+            <a href="design.html" class="card">Дизайн</a>
+            <a href="resume.html" class="card">Резюме</a>
         </div>
 
     </main>
+
+    <script src="js/theme.js"></script>
+    <script src="js/analytics.js"></script>
 
 </body>
 

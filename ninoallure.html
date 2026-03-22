@@ -1,25 +1,54 @@
-<main class="music">
+<!DOCTYPE html>
+<html lang="ru">
 
-    <h1>Музыка</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="release-list">
+    <title>Музыка — Nino Allure</title>
+    <meta name="description" content="Музыкальные релизы Nino Allure">
 
-        <div class="release">
-            <div class="cover"></div>
-            <div class="release-info">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/music.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">nino-allure</a>
+
+            <div class="nav-links">
+                <a href="resume.html">резюме</a>
+                <a href="ninoallure.html">музыка</a>
+                <a href="uiux.html">интерфейсы</a>
+                <a href="design.html">дизайн</a>
+            </div>
+
+            <button class="theme-toggle" id="themeToggle">◐</button>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <h1>Музыка</h1>
+
+        <div class="track">
+            <div>
                 <h3>Allure Vol.1</h3>
-                <p>Ambient / electronic</p>
+                <p>2025 · ambient</p>
             </div>
+            <button class="play">play</button>
+            <audio src="audio/track1.mp3"></audio>
         </div>
 
-        <div class="release">
-            <div class="cover"></div>
-            <div class="release-info">
-                <h3>Dream Sequence</h3>
-                <p>Experimental</p>
-            </div>
-        </div>
+    </main>
 
-    </div>
+    <script src="js/player.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/analytics.js"></script>
 
-</main>
+</body>
+
+</html>

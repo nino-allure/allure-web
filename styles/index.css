@@ -1,0 +1,35 @@
+.home h1 {
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+
+    text-decoration: none;
+    color: var(--text);
+
+    transition: all .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #bcbab7;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

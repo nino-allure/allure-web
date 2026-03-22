@@ -3,3 +3,54 @@
     justify-content: space-between;
     padding: 1rem 0;
 }
+.play {
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--text);
+
+    width: 64px;
+    height: 32px;
+
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.embeds {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin: 1.5rem 0 2rem;
+}
+
+iframe{
+        border-radius: 10px;
+}
+
+.embed {
+    width: 100%;
+    border: none;
+
+    filter: grayscale(1) contrast(1.05);
+    opacity: 0.9;
+
+    transition: all .3s ease;
+}
+
+.embed:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+
+@media (min-width: 768px) {
+
+    .embeds {
+        flex-direction: row;
+    }
+
+    .embed {
+        width: 50%;
+    }
+
+}

@@ -54,3 +54,21 @@ iframe{
     }
 
 }
+
+.release {
+    opacity: 0.85;
+    transition: opacity .3s ease;
+}
+
+.release:hover {
+    opacity: 1;
+}
+
+.release-cover img {
+    filter: grayscale(1);
+    transition: filter .4s ease;
+}
+
+.release:hover img {
+    filter: grayscale(0);
+}

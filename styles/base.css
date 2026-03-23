@@ -222,3 +222,15 @@ img {
 [data-theme="dark"] .noise {
     opacity: 0.06;
 }
+
+body {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--line);
+}   

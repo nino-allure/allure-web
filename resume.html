@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Резюме — Nino Allure</title>
-    <meta name="description" content="Резюме Антона Маркова — дизайнер, разработчик, музыкант">
+    <title>Resume - Nino Allure</title>
+    <meta name="description" content="Resume of Anton Markov - designer, developer, musician">
 
     <link rel="icon" href="favicon.png">
 
@@ -23,12 +23,13 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">nino-allure</a>
             <div class="nav-links">
-                <a href="resume.html">резюме</a>
-                <a href="ninoallure.html">музыка</a>
-                <a href="uiux.html">веб</a>
-                <a href="design.html">дизайн</a>
+                <a href="resume.html" data-i18n="nav-resume">resume</a>
+                <a href="ninoallure.html" data-i18n="nav-music">music</a>
+                <a href="uiux.html" data-i18n="nav-web">web</a>
+                <a href="design.html" data-i18n="nav-design">design</a>
             </div>
-            <button class="theme-toggle" id="themeToggle">◐</button>
+            <button class="theme-toggle" id="themeToggle" data-i18n="theme-btn">theme</button>
+            <button class="theme-toggle" id="langToggle">RU</button>
         </div>
     </nav>
 
@@ -36,12 +37,12 @@
 
         <section class="resume-hero">
 
-            <h1>Марков Антон</h1>
+            <h1 data-i18n="resume-name">Anton Markov</h1>
 
-            <p class="resume-bio">
-                Дизайнер, разработчик и музыкант.
-                Работаю на пересечении визуальной эстетики и функциональности.
-                Vision: создавать проекты, которые не только выглядят хорошо, но и приносят реальную пользу людям.
+            <p class="resume-bio" data-i18n="resume-bio">
+                Designer, developer and musician.
+                Working at the intersection of visual aesthetics and functionality.
+                Vision: to create projects that not only look good but also bring real value to people.
             </p>
 
         </section>
@@ -50,17 +51,17 @@
 
         <section class="resume-section">
 
-            <h2>Опыт</h2>
+            <h2 data-i18n="resume-experience">Experience</h2>
 
             <div class="resume-item">
 
                 <div class="resume-head">
-                    <span>Т-Банк</span>
-                    <span>2025–2026</span>
+                    <span data-i18n="resume-tbank">T-Bank</span>
+                    <span data-i18n="resume-tbank-period">2025-2026</span>
                 </div>
 
-                <p>
-                    Разметка данных, модерация платформы «Пульс», работа с контентом и документацией.
+                <p data-i18n="resume-tbank-desc">
+                    Data labeling, moderation of the Pulse platform, working with content and documentation.
                 </p>
 
             </div>
@@ -68,12 +69,12 @@
             <div class="resume-item">
 
                 <div class="resume-head">
-                    <span>Яндекс Crowd</span>
-                    <span>2025</span>
+                    <span data-i18n="resume-yandex">Yandex Crowd</span>
+                    <span data-i18n="resume-yandex-period">2025</span>
                 </div>
 
-                <p>
-                    Оценка и фильтрация веб-сайтов, исследование контента.
+                <p data-i18n="resume-yandex-desc">
+                    Evaluation and filtering of websites, content research.
                 </p>
 
             </div>
@@ -82,7 +83,7 @@
 
         <section class="resume-section">
 
-            <h2>Навыки</h2>
+            <h2 data-i18n="resume-skills">Skills</h2>
 
             <div class="skills">
 
@@ -90,7 +91,7 @@
                 <span>HTML / CSS</span>
                 <span>Figma</span>
                 <span>Adobe</span>
-                <span>Музыка / Sound Design</span>
+                <span>Music / Sound Design</span>
 
             </div>
 
@@ -98,7 +99,7 @@
 
         <section class="resume-section">
 
-            <h2>Контакты</h2>
+            <h2 data-i18n="resume-contact">Contact</h2>
 
             <p class="contacts">
                 kxzuy@vk.com
@@ -142,6 +143,7 @@
     <script src="js/scroll.js"></script>
     <script src="js/transitions.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/lang.js"></script>
     <script src="js/analytics.js"></script>
 
 </body>

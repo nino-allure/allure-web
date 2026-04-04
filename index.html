@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Nino Allure — Дизайн, Музыка, Веб</title>
+    <title>Nino Allure - Design, Music, Web</title>
 
-    <meta name="description" content="Портфолио Антона Маркова — дизайн, интерфейсы, веб и электронная музыка.">
+    <meta name="description" content="Portfolio of Anton Markov - design, interfaces, web and electronic music.">
 
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ninoallure.com/">
@@ -33,25 +33,26 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">nino-allure</a>
             <div class="nav-links">
-                <a href="resume.html">резюме</a>
-                <a href="ninoallure.html">музыка</a>
-                <a href="uiux.html">веб</a>
-                <a href="design.html">дизайн</a>
+                <a href="resume.html" data-i18n="nav-resume">resume</a>
+                <a href="ninoallure.html" data-i18n="nav-music">music</a>
+                <a href="uiux.html" data-i18n="nav-web">web</a>
+                <a href="design.html" data-i18n="nav-design">design</a>
             </div>
-            <button class="theme-toggle" id="themeToggle">◐</button>
+            <button class="theme-toggle" id="themeToggle" data-i18n="theme-btn">theme</button>
+            <button class="theme-toggle" id="langToggle">RU</button>
         </div>
     </nav>
 
     <main class="container home">
 
-        <h1>nino allure</h1>
-        <p class="subtitle">design / music / web / ux</p>
+        <h1 data-i18n="home-title">nino allure</h1>
+        <p class="subtitle" data-i18n="home-subtitle">design / music / web / ux</p>
 
         <div class="grid">
-            <a href="ninoallure.html" class="card">Музыка</a>
-            <a href="uiux.html" class="card">Веб</a>
-            <a href="design.html" class="card">Дизайн</a>
-            <a href="resume.html" class="card">Резюме</a>
+            <a href="ninoallure.html" class="card" data-i18n="home-music">Music</a>
+            <a href="uiux.html" class="card" data-i18n="home-web">Web</a>
+            <a href="design.html" class="card" data-i18n="home-design">Design</a>
+            <a href="resume.html" class="card" data-i18n="home-resume">Resume</a>
         </div>
 
     </main>
@@ -86,6 +87,7 @@
     <script src="js/scroll.js"></script>
     <script src="js/transitions.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/lang.js"></script>
     <script src="js/analytics.js"></script>
 
 </body>

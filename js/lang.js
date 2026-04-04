@@ -10,10 +10,24 @@ const translations = {
         // Home page
         'home-title': 'nino allure',
         'home-subtitle': 'design / music / web / ux',
+        'home-portfolio': 'Portfolio',
         'home-music': 'Music',
         'home-web': 'Web',
         'home-design': 'Design',
         'home-resume': 'Resume',
+        
+        // Portfolio page
+        'portfolio-title': 'Portfolio Cases',
+        'portfolio-subtitle': 'Selected design projects with detailed descriptions',
+        'case-1-title': 'Project Title',
+        'case-1-desc': 'Brief description of the project, goals and results achieved.',
+        'case-2-title': 'Project Title',
+        'case-2-desc': 'Brief description of the project, goals and results achieved.',
+        'case-3-title': 'Project Title',
+        'case-3-desc': 'Brief description of the project, goals and results achieved.',
+        'case-4-title': 'Project Title',
+        'case-4-desc': 'Brief description of the project, goals and results achieved.',
+        'case-view': 'View Case',
         
         // Music page
         'music-title': 'Music',
@@ -71,10 +85,24 @@ const translations = {
         // Home page
         'home-title': 'nino allure',
         'home-subtitle': 'дизайн / музыка / веб / ux',
+        'home-portfolio': 'Портфолио',
         'home-music': 'Музыка',
         'home-web': 'Веб',
         'home-design': 'Дизайн',
         'home-resume': 'Резюме',
+        
+        // Portfolio page
+        'portfolio-title': 'Портфолио',
+        'portfolio-subtitle': 'Избранные дизайн-проекты с подробными описаниями',
+        'case-1-title': 'Название проекта',
+        'case-1-desc': 'Краткое описание проекта, цели и достигнутые результаты.',
+        'case-2-title': 'Название проекта',
+        'case-2-desc': 'Краткое описание проекта, цели и достигнутые результаты.',
+        'case-3-title': 'Название проекта',
+        'case-3-desc': 'Краткое описание проекта, цели и достигнутые результаты.',
+        'case-4-title': 'Название проекта',
+        'case-4-desc': 'Краткое описание проекта, цели и достигнутые результаты.',
+        'case-view': 'Смотреть кейс',
         
         // Music page
         'music-title': 'Музыка',

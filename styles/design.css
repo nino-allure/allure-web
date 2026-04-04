@@ -4,45 +4,26 @@
     gap: 1.5rem;
 }
 
-.design-card img {
-    width: 100%;
-    opacity: 0.9;
-    transition: opacity .3s;
-}
+/* broken grid effect - desktop only */
+@media (min-width: 768px) {
+    .design-card:nth-child(odd) {
+        margin-right: 20%;
+    }
 
-.design-card:hover img {
-    opacity: 1;
-}
-
-/* broken grid */
-.design-card:nth-child(odd) {
-    margin-right: 20%;
-}
-
-.design-card:nth-child(even) {
-    margin-left: 20%;
+    .design-card:nth-child(even) {
+        margin-left: 20%;
+    }
 }
 
 .design-card img {
     width: 100%;
+    height: auto;
     display: block;
-
+    opacity: 0.9;
     transition: transform .5s ease, opacity .3s ease;
 }
 
 .design-card:hover img {
     transform: translateY(-6px);
-    opacity: .9;
-}
-
-/* desktop */
-@media (min-width: 768px) {
-    .design-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .design-card:nth-child(odd),
-    .design-card:nth-child(even) {
-        margin: 0;
-    }
+    opacity: 1;
 }

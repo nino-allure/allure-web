@@ -1,7 +1,22 @@
 .track {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .track {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .play {
+        width: 56px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
 }
 .play {
     background: none;

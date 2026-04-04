@@ -5,10 +5,14 @@ document.querySelectorAll(".track").forEach(t => {
     b.onclick = () => {
         if (a.paused) {
             a.play();
-            b.textContent = "pause";
+            // Use current language for pause text
+            const lang = localStorage.getItem('lang') || 'en';
+            b.textContent = lang === 'ru' ? 'пауза' : 'pause';
         } else {
             a.pause();
-            b.textContent = "play";
+            // Use current language for play text
+            const lang = localStorage.getItem('lang') || 'en';
+            b.textContent = lang === 'ru' ? 'играть' : 'play';
         }
     };
 });

@@ -1,46 +1,21 @@
 .ui-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
 }
+
 .ui-card {
-    max-width: 700px;
+    max-width: 100%;
 }
 
-/* broken grid */
-.ui-card:nth-child(2) {
-    margin-left: 10%;
-}
-
-.ui-card:nth-child(3) {
-    margin-left: 25%;
-}
-
-.ui-card img {
-    width: 100%;
-    display: block;
-
-    transition: transform .6s ease;
-}
-
-.ui-card:hover img {
-    transform: scale(1.02);
-}
-
-.ui-card p {
-    margin-top: .5rem;
-    max-width: 500px;
-}
-
-/* desktop */
+/* broken grid effect - desktop only */
 @media (min-width: 768px) {
-    .ui-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .ui-card:nth-child(2) {
+        margin-left: 10%;
     }
 
-    .ui-card:nth-child(2),
     .ui-card:nth-child(3) {
-        margin-left: 0;
+        margin-left: 25%;
     }
 }
 
@@ -56,6 +31,7 @@
 
 .ui-image img {
     width: 100%;
+    height: auto;
     display: block;
 
     transition: transform .5s ease;
@@ -94,37 +70,19 @@
     transform: translateX(4px);
 }
 
-@media (max-width: 767px) {
-
-    .ui-card {
-        margin-left: 0 !important;
-    }
-
+/* standalone cards (images only) */
+.ui-card:not(:has(.ui-link)) img {
+    width: 100%;
+    display: block;
+    transition: transform .5s ease, opacity .3s ease;
 }
 
-/* mobile — чисто */
-.ui-card {
-    margin-left: 0;
+.ui-card:not(:has(.ui-link)):hover img {
+    transform: translateY(-6px);
 }
 
-/* desktop — стиль */
-@media (min-width: 768px) {
-
-    .ui-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .ui-card:nth-child(2) {
-        margin-left: 10%;
-    }
-
-    .ui-card:nth-child(3) {
-        margin-left: 25%;
-    }
-
-}
-
-.ui-card {
-    max-width: 100%;
+.ui-card:not(:has(.ui-link)) p {
+    margin-top: .5rem;
+    max-width: 500px;
 }
 

@@ -61,21 +61,27 @@
     font-weight: 500;
 }
 
-/* mobile nav */
-@media (max-width: 600px) {
+/* mobile nav improvements */
+@media (max-width: 768px) {
     .nav-links {
-        gap: .7rem;
+        gap: .5rem;
         font-size: .75rem;
     }
     
     .nav-inner {
         flex-wrap: wrap;
         gap: 0.5rem;
+        padding: 0.8rem 1rem;
     }
-    
+
     #langToggle {
         width: auto;
         padding: 0 8px;
         font-size: 0.7rem;
+    }
+
+    .theme-toggle {
+        width: 28px;
+        height: 28px;
     }
 }

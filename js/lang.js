@@ -6,6 +6,7 @@ const translations = {
         'nav-music': 'music',
         'nav-web': 'web',
         'nav-design': 'design',
+        'nav-cases' : 'cases',
         
         // Home page
         'home-title': 'nino allure',
@@ -81,6 +82,7 @@ const translations = {
         'nav-music': 'музыка',
         'nav-web': 'веб',
         'nav-design': 'дизайн',
+        'nav-cases': 'кейсы',
         
         // Home page
         'home-title': 'nino allure',
@@ -94,8 +96,8 @@ const translations = {
         // Portfolio page
         'portfolio-title': 'Портфолио',
         'portfolio-subtitle': 'Избранные дизайн-проекты с подробными описаниями',
-        'case-1-title': 'Название проекта',
-        'case-1-desc': 'Краткое описание проекта, цели и достигнутые результаты.',
+        'case-1-title': 'eco by allure',
+        'case-1-desc': 'Как я создавал бренд одежды и его сайт.',
         'case-2-title': 'Название проекта',
         'case-2-desc': 'Краткое описание проекта, цели и достигнутые результаты.',
         'case-3-title': 'Название проекта',
@@ -147,7 +149,6 @@ const translations = {
         'footer-telegram': 'telegram',
         
         // Theme
-        'theme-btn': 'тема',
         'lang-btn': 'EN'
     }
 };
